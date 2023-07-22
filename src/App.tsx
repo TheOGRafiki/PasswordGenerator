@@ -4,6 +4,15 @@ import PasswordGenerator from "./Generator";
 import { createTheme } from "@mui/material";
 
 const theme = createTheme({
+  typography: {
+    fontFamily: "'IBM Plex Mono', monospace",
+    body1: {
+      color: "#333", // Set default text color to a dark color
+    },
+    body2: {
+      color: "#333", // Set default text color to a dark color
+    },
+  },
   palette: {
     primary: {
       main: "#4CAF50", // Green
@@ -11,9 +20,6 @@ const theme = createTheme({
     secondary: {
       main: "#000000", // Black
     },
-  },
-  typography: {
-    fontFamily: "Arial, sans-serif", // You can change this to your preferred font
   },
 });
 
